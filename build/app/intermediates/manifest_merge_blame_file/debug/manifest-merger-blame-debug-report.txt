@@ -1,0 +1,88 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.samkok.school"
+4    android:versionCode="5"
+5    android:versionName="5.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+9        android:targetSdkVersion="29" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->D:\AndroidStudioProjects\flutter\school_IoT\school\android\app\src\main\AndroidManifest.xml:14:5-66
+14-->D:\AndroidStudioProjects\flutter\school_IoT\school\android\app\src\main\AndroidManifest.xml:14:22-64
+15    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+15-->D:\AndroidStudioProjects\flutter\school_IoT\school\android\app\src\main\AndroidManifest.xml:15:5-74
+15-->D:\AndroidStudioProjects\flutter\school_IoT\school\android\app\src\main\AndroidManifest.xml:15:22-72
+16    <uses-permission android:name="android.permission.READ_SMS" />
+16-->[:sms] D:\AndroidStudioProjects\flutter\school_IoT\school\build\sms\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-67
+16-->[:sms] D:\AndroidStudioProjects\flutter\school_IoT\school\build\sms\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-64
+17    <uses-permission android:name="android.permission.SEND_SMS" />
+17-->[:sms] D:\AndroidStudioProjects\flutter\school_IoT\school\build\sms\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-67
+17-->[:sms] D:\AndroidStudioProjects\flutter\school_IoT\school\build\sms\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-64
+18    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+18-->[:sms] D:\AndroidStudioProjects\flutter\school_IoT\school\build\sms\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-70
+18-->[:sms] D:\AndroidStudioProjects\flutter\school_IoT\school\build\sms\intermediates\library_manifest\debug\AndroidManifest.xml:9:22-67
+19    <uses-permission android:name="android.permission.READ_CONTACTS" />
+19-->[:sms] D:\AndroidStudioProjects\flutter\school_IoT\school\build\sms\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-72
+19-->[:sms] D:\AndroidStudioProjects\flutter\school_IoT\school\build\sms\intermediates\library_manifest\debug\AndroidManifest.xml:11:22-69
+20    <uses-permission android:name="android.permission.READ_PROFILE" />
+20-->[:sms] D:\AndroidStudioProjects\flutter\school_IoT\school\build\sms\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-71
+20-->[:sms] D:\AndroidStudioProjects\flutter\school_IoT\school\build\sms\intermediates\library_manifest\debug\AndroidManifest.xml:12:22-68
+21
+22    <application
+22-->D:\AndroidStudioProjects\flutter\school_IoT\school\android\app\src\main\AndroidManifest.xml:17:5-40:19
+23        android:name="io.flutter.app.FlutterApplication"
+23-->D:\AndroidStudioProjects\flutter\school_IoT\school\android\app\src\main\AndroidManifest.xml:18:9-57
+24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+24-->[androidx.core:core:1.0.2] C:\Users\Kingsman\.gradle\caches\transforms-2\files-2.1\83dd696ebab5109b40aeb9f49d5069f8\core-1.0.2\AndroidManifest.xml:22:18-86
+25        android:debuggable="true"
+26        android:icon="@mipmap/ic_launcher"
+26-->D:\AndroidStudioProjects\flutter\school_IoT\school\android\app\src\main\AndroidManifest.xml:20:9-43
+27        android:label="Smart Farm Assistance" >
+27-->D:\AndroidStudioProjects\flutter\school_IoT\school\android\app\src\main\AndroidManifest.xml:19:9-46
+28        <activity
+28-->D:\AndroidStudioProjects\flutter\school_IoT\school\android\app\src\main\AndroidManifest.xml:21:9-39:20
+29            android:name="com.samkok.school.MainActivity"
+29-->D:\AndroidStudioProjects\flutter\school_IoT\school\android\app\src\main\AndroidManifest.xml:22:13-41
+30            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+30-->D:\AndroidStudioProjects\flutter\school_IoT\school\android\app\src\main\AndroidManifest.xml:25:13-144
+31            android:hardwareAccelerated="true"
+31-->D:\AndroidStudioProjects\flutter\school_IoT\school\android\app\src\main\AndroidManifest.xml:26:13-47
+32            android:launchMode="singleTop"
+32-->D:\AndroidStudioProjects\flutter\school_IoT\school\android\app\src\main\AndroidManifest.xml:23:13-43
+33            android:theme="@style/LaunchTheme"
+33-->D:\AndroidStudioProjects\flutter\school_IoT\school\android\app\src\main\AndroidManifest.xml:24:13-47
+34            android:windowSoftInputMode="adjustResize" >
+34-->D:\AndroidStudioProjects\flutter\school_IoT\school\android\app\src\main\AndroidManifest.xml:27:13-55
+35
+36            <!--
+37                 This keeps the window background of the activity showing
+38                 until Flutter renders its first frame. It can be removed if
+39                 there is no splash screen (such as the default splash screen
+40                 defined in @style/LaunchTheme).
+41            -->
+42            <meta-data
+42-->D:\AndroidStudioProjects\flutter\school_IoT\school\android\app\src\main\AndroidManifest.xml:32:13-34:40
+43                android:name="io.flutter.app.android.SplashScreenUntilFirstFrame"
+43-->D:\AndroidStudioProjects\flutter\school_IoT\school\android\app\src\main\AndroidManifest.xml:33:17-82
+44                android:value="true" />
+44-->D:\AndroidStudioProjects\flutter\school_IoT\school\android\app\src\main\AndroidManifest.xml:34:17-37
+45
+46            <intent-filter>
+46-->D:\AndroidStudioProjects\flutter\school_IoT\school\android\app\src\main\AndroidManifest.xml:35:13-38:29
+47                <action android:name="android.intent.action.MAIN" />
+47-->D:\AndroidStudioProjects\flutter\school_IoT\school\android\app\src\main\AndroidManifest.xml:36:17-68
+47-->D:\AndroidStudioProjects\flutter\school_IoT\school\android\app\src\main\AndroidManifest.xml:36:25-66
+48
+49                <category android:name="android.intent.category.LAUNCHER" />
+49-->D:\AndroidStudioProjects\flutter\school_IoT\school\android\app\src\main\AndroidManifest.xml:37:17-76
+49-->D:\AndroidStudioProjects\flutter\school_IoT\school\android\app\src\main\AndroidManifest.xml:37:27-74
+50            </intent-filter>
+51        </activity>
+52    </application>
+53
+54</manifest>

@@ -1,0 +1,6 @@
+# Referenced at D:\AndroidStudioProjects\flutter\school_IoT\school\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:31
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+# Referenced at D:\AndroidStudioProjects\flutter\school_IoT\school\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:36
+-keep class com.samkok.school.MainActivity { <init>(); }
+# Referenced at D:\AndroidStudioProjects\flutter\school_IoT\school\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:31
+-keep class io.flutter.app.FlutterApplication { <init>(); }

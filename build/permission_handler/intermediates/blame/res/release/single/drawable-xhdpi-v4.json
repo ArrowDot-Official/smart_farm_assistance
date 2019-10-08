@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "D:\\AndroidStudioProjects\\flutter\\school_IoT\\school\\build\\permission_handler\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png",
+        "source": "C:\\Users\\Kingsman\\.gradle\\caches\\transforms-2\\files-2.1\\83dd696ebab5109b40aeb9f49d5069f8\\core-1.0.2\\res\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\flutter\\school_IoT\\school\\build\\permission_handler\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\notification_bg_normal.9.png",
+        "source": "C:\\Users\\Kingsman\\.gradle\\caches\\transforms-2\\files-2.1\\83dd696ebab5109b40aeb9f49d5069f8\\core-1.0.2\\res\\drawable-xhdpi-v4\\notification_bg_normal.9.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\flutter\\school_IoT\\school\\build\\permission_handler\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png",
+        "source": "C:\\Users\\Kingsman\\.gradle\\caches\\transforms-2\\files-2.1\\83dd696ebab5109b40aeb9f49d5069f8\\core-1.0.2\\res\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\flutter\\school_IoT\\school\\build\\permission_handler\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png",
+        "source": "C:\\Users\\Kingsman\\.gradle\\caches\\transforms-2\\files-2.1\\83dd696ebab5109b40aeb9f49d5069f8\\core-1.0.2\\res\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\flutter\\school_IoT\\school\\build\\permission_handler\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png",
+        "source": "C:\\Users\\Kingsman\\.gradle\\caches\\transforms-2\\files-2.1\\83dd696ebab5109b40aeb9f49d5069f8\\core-1.0.2\\res\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png"
+    }
+]

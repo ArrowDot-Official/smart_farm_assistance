@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\AndroidStudioProjects\\flutter\\school_IoT\\school\\build\\permission_handler\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-zh-rTW\\values-zh-rTW.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Kingsman\\.gradle\\caches\\transforms-2\\files-2.1\\83dd696ebab5109b40aeb9f49d5069f8\\core-1.0.2\\res\\values-zh-rTW\\values-zh-rTW.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\AndroidStudioProjects\\flutter\\school_IoT\\school\\build\\permission_handler\\intermediates\\res\\merged\\release\\values-zh-rTW\\values-zh-rTW.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Kingsman\\.gradle\\caches\\transforms-2\\files-2.1\\83dd696ebab5109b40aeb9f49d5069f8\\core-1.0.2\\res\\values-zh-rTW\\values-zh-rTW.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}

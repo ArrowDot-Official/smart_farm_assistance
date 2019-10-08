@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\AndroidStudioProjects\\flutter\\school_IoT\\school\\build\\permission_handler\\intermediates\\res\\merged\\release\\drawable\\notification_bg_low.xml",
+        "source": "C:\\Users\\Kingsman\\.gradle\\caches\\transforms-2\\files-2.1\\83dd696ebab5109b40aeb9f49d5069f8\\core-1.0.2\\res\\drawable\\notification_bg_low.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\flutter\\school_IoT\\school\\build\\permission_handler\\intermediates\\res\\merged\\release\\drawable\\notification_tile_bg.xml",
+        "source": "C:\\Users\\Kingsman\\.gradle\\caches\\transforms-2\\files-2.1\\83dd696ebab5109b40aeb9f49d5069f8\\core-1.0.2\\res\\drawable\\notification_tile_bg.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\flutter\\school_IoT\\school\\build\\permission_handler\\intermediates\\res\\merged\\release\\drawable\\notification_bg.xml",
+        "source": "C:\\Users\\Kingsman\\.gradle\\caches\\transforms-2\\files-2.1\\83dd696ebab5109b40aeb9f49d5069f8\\core-1.0.2\\res\\drawable\\notification_bg.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\flutter\\school_IoT\\school\\build\\permission_handler\\intermediates\\res\\merged\\release\\drawable\\notification_icon_background.xml",
+        "source": "C:\\Users\\Kingsman\\.gradle\\caches\\transforms-2\\files-2.1\\83dd696ebab5109b40aeb9f49d5069f8\\core-1.0.2\\res\\drawable\\notification_icon_background.xml"
+    }
+]

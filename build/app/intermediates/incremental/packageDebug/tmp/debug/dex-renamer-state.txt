@@ -1,0 +1,4 @@
+#Tue Oct 08 00:18:17 ICT 2019
+base.0=D\:\\AndroidStudioProjects\\flutter\\school_IoT\\school\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
