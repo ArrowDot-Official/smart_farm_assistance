@@ -89,10 +89,10 @@ class _CreateDeviceWidgetState extends State<CreateDeviceWidget> {
         child: ListView(
           children: <Widget>[
             CreateMotor(model: widget.model),
-            Divider(color: Colors.green[700]),
-//            _getOrRegisterNumber(context),
-            SizedBox(height: 30),
-            CreateValve(model: widget.model)
+//            Divider(color: Colors.green[700]),
+////            _getOrRegisterNumber(context),
+//            SizedBox(height: 30),
+//            CreateValve(model: widget.model)
           ],
         ),
       ),

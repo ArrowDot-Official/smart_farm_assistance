@@ -1,4 +1,4 @@
-#Fri Oct 04 23:17:20 ICT 2019
+#Wed Oct 09 16:46:58 ICT 2019
 base.0=D\:\\AndroidStudioProjects\\flutter\\school_IoT\\school\\build\\app\\intermediates\\transforms\\r8\\release\\0\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

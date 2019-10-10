@@ -2,8 +2,10 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:school/database/db_device.dart';
 import 'package:school/database/db_motor.dart';
 import 'package:school/database/db_valve.dart';
+import 'package:school/models/device.dart';
 import 'package:school/models/motor.dart';
 import 'package:school/models/valve.dart';
 import 'package:school/view_model/language_view_model.dart';
@@ -25,10 +27,10 @@ class MotorController extends StatefulWidget {
 
 class _MotorControllerState extends State<MotorController> {
 
-  DBMotor _dbMotor = new DBMotor();
+  DBDevice _dbDevice = new DBDevice();
 
-  Future<List<Motor>> _getMotor() async {
-    List<Motor> m = await _dbMotor.getAllMotor();
+  Future<List<Device>> _getMotor() async {
+    List<Device> m = await _dbDevice.getAllDevice(where: "type='motor'");
     return m;
   }
 
@@ -78,7 +80,7 @@ class _MotorControllerState extends State<MotorController> {
             FutureBuilder(
               future: _getMotor(),
               builder: (context, snapshot) {
-                List<Motor> list = List();
+                List<Device> list = List();
                 if (snapshot.hasData) {
                   list = snapshot.data;
                 }
@@ -98,7 +100,7 @@ class _MotorControllerState extends State<MotorController> {
     );
   }
 
-  _listMotorWidget(Motor motor) {
+  _listMotorWidget(Device motor) {
     SmsReceiver receiver = new SmsReceiver();
     SmsSender sender = new SmsSender();
 
@@ -158,7 +160,7 @@ class _MotorControllerState extends State<MotorController> {
                     print("ELSE ===============> " + received);
                     print("TEST4 ");
                   }
-                  _dbMotor.updateMotor(motor);
+                  _dbDevice.updateDevice(motor);
 
                   return Container(
                       padding: EdgeInsets.all(5),
@@ -256,7 +258,7 @@ class _MotorControllerState extends State<MotorController> {
     );
   }
 
-  Future commandDialog(BuildContext context, Motor motor) async {
+  Future commandDialog(BuildContext context, Device motor) async {
     await showDialog(
         context: context,
         builder: (_) => AlertDialog(
@@ -270,7 +272,7 @@ class _MotorControllerState extends State<MotorController> {
     );
   }
 
-  _terminateButtonDialog(BuildContext context, Motor motor) {
+  _terminateButtonDialog(BuildContext context, Device motor) {
     return FlatButton(
       onPressed: () async {
         await _sendMessage("[off]", motor.number);
@@ -289,7 +291,7 @@ class _MotorControllerState extends State<MotorController> {
     );
   }
 
-  _sendButtonDialog(BuildContext context, Motor motor) {
+  _sendButtonDialog(BuildContext context, Device motor) {
     return FlatButton(
       onPressed: () async {
         String msg = "["+_durationTextController.text+"]";

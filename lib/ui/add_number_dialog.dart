@@ -187,10 +187,10 @@ class _AddNumberDialogState extends State<AddNumberDialog> {
               return ListView.builder(
                   itemCount: snapshot.data.length,
                   itemBuilder: (context, index) {
-                    final item = items[index];
+                    PhoneNumber item = items[index];
                     return InkWell(
                       onTap: () {
-                        Navigator.of(context).pop(item.number);
+                        Navigator.of(context).pop(item);
                       },
                       child: Container(
                         child: Column(

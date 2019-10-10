@@ -18,7 +18,7 @@ class LandingPage extends StatefulWidget {
 class _LandingPageState extends State<LandingPage> {
 
   List<Widget> pages = [MyHomePage(), SettingDevicePage(),  LanguagePage(), AboutPage(), FarmControllerPage(), UserSettingPage()];
-  int index = 4;
+  int index = 1;
   PermissionStatus _status;
 
   List<UnicornButton> _getProfileMenu(Map<String, dynamic> map) {

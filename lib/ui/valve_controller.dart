@@ -2,7 +2,10 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:school/database/db_device.dart';
 import 'package:school/database/db_valve.dart';
+import 'package:school/models/device.dart';
+import 'package:school/models/motor.dart';
 import 'package:school/models/valve.dart';
 import 'package:school/view_model/language_view_model.dart';
 import 'package:school/view_model/sms_view_model.dart';
@@ -23,10 +26,10 @@ class ValveController extends StatefulWidget {
 
 class _ValveControllerState extends State<ValveController> {
 
-  DBValve _dbValve = new DBValve();
+  DBDevice _dbDevice = new DBDevice();
 
-  Future<List<Valve>> _getValve() async {
-    List<Valve> m = await _dbValve.getAllValve();
+  Future<List<Device>> _getValve() async {
+    List<Device> m = await _dbDevice.getAllDevice(where: "type='valve'");
     return m;
   }
 
@@ -76,7 +79,7 @@ class _ValveControllerState extends State<ValveController> {
             FutureBuilder(
               future: _getValve(),
               builder: (context, snapshot) {
-                List<Valve> list = List();
+                List<Device> list = List();
                 if (snapshot.hasData) {
                   list = snapshot.data;
                 }
@@ -96,7 +99,7 @@ class _ValveControllerState extends State<ValveController> {
     );
   }
 
-  _listValveWidget(Valve valve) {
+  _listValveWidget(Device valve) {
     SmsReceiver receiver = new SmsReceiver();
     SmsSender sender = new SmsSender();
 
@@ -154,7 +157,7 @@ class _ValveControllerState extends State<ValveController> {
                     print("ELSE ===============> " + received);
                     print("TEST4 ");
                   }
-                  _dbValve.updateValve(valve);
+                  _dbDevice.updateDevice(valve);
 
                   return Container(
                       padding: EdgeInsets.all(5),
@@ -252,7 +255,7 @@ class _ValveControllerState extends State<ValveController> {
     );
   }
 
-  Future commandDialog(BuildContext context, Valve valve) async {
+  Future commandDialog(BuildContext context, Device valve) async {
     await showDialog(
         context: context,
         builder: (_) => AlertDialog(
@@ -266,7 +269,7 @@ class _ValveControllerState extends State<ValveController> {
     );
   }
 
-  _terminateButtonDialog(BuildContext context, Valve valve) {
+  _terminateButtonDialog(BuildContext context, Device valve) {
     return FlatButton(
       onPressed: () async {
         await _sendMessage("[v"+valve.tag + "-off]", valve.number);
@@ -285,7 +288,7 @@ class _ValveControllerState extends State<ValveController> {
     );
   }
 
-  _sendButtonDialog(BuildContext context, Valve valve) {
+  _sendButtonDialog(BuildContext context, Device valve) {
     return FlatButton(
       onPressed: () async {
         String msg = "[v${valve.tag}-"+_durationTextController.text+"]";
